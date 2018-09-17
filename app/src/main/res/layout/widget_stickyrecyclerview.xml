@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/layout_pre_title"
+        style="@style/LayoutTitle">
+
+        <TextView
+            android:id="@+id/tv_pre_title"
+            style="@style/TvTitle" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_pre_title"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        style="@style/LayoutTitle"
+        android:layout_below="@id/layout_pre_title">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/TvTitle" />
+    </RelativeLayout>
+</merge>
