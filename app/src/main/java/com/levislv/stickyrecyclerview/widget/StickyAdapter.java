@@ -1,5 +1,6 @@
 package com.levislv.stickyrecyclerview.widget;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -46,8 +47,9 @@ public class StickyAdapter extends RecyclerView.Adapter<StickyAdapter.ViewHolder
         return mList == null || position >= mList.size() ? null : mList.get(position);
     }
 
+    @SuppressLint("InflateParams")
     @Override
-    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         return new ViewHolder(LayoutInflater.from(mContext).inflate(R.layout.item_contact, null));
     }
 
