@@ -1,7 +1,8 @@
 package com.levislv.stickyrecyclerview;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.levislv.stickyrecyclerview.widget.Model;
 import com.levislv.stickyrecyclerview.widget.StickyRecyclerView;
@@ -11,7 +12,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    private StickyRecyclerView stickyRecyclerView;
+    private StickyRecyclerView contactRecyclerView;
 
     private List<Model> modelList;
 
@@ -36,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initView() {
-        stickyRecyclerView = findViewById(R.id.contact_recycler_view);
-        stickyRecyclerView.setDataSource(modelList);
+        contactRecyclerView = findViewById(R.id.contact_recycler_view);
+        contactRecyclerView.setDataSource(modelList);
     }
 }
